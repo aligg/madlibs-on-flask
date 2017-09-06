@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+  <title>Madlibs</title>
+</head>
+<body>
+    Hi {{ person }}! I think you're {{ compliment }}!<br><br>
+    <form action="/madlib/{{ person }}">
+        {{ person }}, you up for a game?<br>
+        Person<input type="text" name="aperson"><br>
+        Color<input type="text" name="color"><br>
+        Noun<input type="text" name="noun"><br>
+        Adjective<input type="text" name="adjective"><br><br>
+        Animals:<input type="checkbox" name="animals" value="Rhino">Rhino
+            <input type="checkbox" name="animals" value="Platypus">Platypus
+            <input type="checkbox" name="animals" value="Unicorn">Unicorn
+        <input type="submit"value="Let's Play">
+    </form>
+</body>
+</html>
