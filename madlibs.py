@@ -74,7 +74,11 @@ def show_madlib(player):
     animal_choice = choice(animals)
 
 
-    return render_template("madlib.html",
+    possible_template = ["madlib.html", "madlib2.html", "madlib3.html"]
+    template_choice = choice(possible_template)
+
+
+    return render_template(template_choice,
                             person=player,
                             color=color,
                             noun=noun,

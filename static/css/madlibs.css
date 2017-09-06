@@ -1,5 +1,11 @@
 body {
     font-family: sans-serif;
-    background-color: red;
+    color: #005A31;
+    background-color: #CBE32D;
+    padding: 10em;
+    font-style: oblique;
 }
 
+input[type=submit] {
+    color: magenta;
+}

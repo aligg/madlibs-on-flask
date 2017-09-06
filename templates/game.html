@@ -1,9 +1,12 @@
-<!doctype html>
-<html>
-<head>
-  <title>Madlibs</title>
-</head>
-<body>
+{% extends "base.html" %}
+
+
+
+  {% block title %} Madlibs {% endblock %}
+
+
+{% block content %}
+
     Hi {{ person }}! I think you're {{ compliment }}!<br><br>
     <form action="/madlib/{{ person }}">
         {{ person }}, you up for a game?<br>
@@ -16,5 +19,6 @@
             <input type="checkbox" name="animals" value="Unicorn">Unicorn
         <input type="submit"value="Let's Play">
     </form>
-</body>
-</html>
+
+
+{% endblock %}
